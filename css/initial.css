@@ -1,0 +1,28 @@
+:root {
+    --bg-white: #FFFFFF;
+    --bg-light-grey: #F8F8F8; /* Very subtle light grey for alternating sections */
+    --primary-blue: #2196F3; /* A friendly, vibrant blue */
+    --secondary-blue: #1976D2; /* A slightly darker shade of blue */
+    --accent-green: #4CAF50; /* A fresh, playful green for accents */
+    --text-dark: #333333; /* Dark grey for main text, softer than pure black */
+    --text-medium: #555555; /* Medium dark grey text */
+    --text-light: #FFFFFF; /* White text for contrast on dark elements */
+
+    /* Liquid Glass specific colors for light theme */
+    --glass-bg: rgba(255, 255, 255, 0.75); /* Slightly more opaque white for glass elements */
+    --glass-border: rgba(33, 150, 243, 0.3); /* Subtle blue border for glass */
+    --glow-color: rgba(33, 150, 243, 0.4); /* Blue glow */
+    --input-bg: rgba(248, 248, 255, 0.95); /* Very light, almost white input background */
+
+    /* Liquid glass for buttons */
+    --button-glass-bg: rgba(33, 150, 243, 0.15); /* Light blue tint, transparent */
+    --button-glass-border: rgba(33, 150, 243, 0.5);
+    --button-glow-color: rgba(33, 150, 243, 0.3);
+    --button-text-color: var(--secondary-blue); /* Darker blue for button text */
+}
+.credits span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--accent-green);
+    margin-top: 1rem;
+}

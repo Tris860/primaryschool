@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlight Primary - News & Events</title>
+    <!-- Google Fonts: Inter for a clean, modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Tailwind CSS CDN removed -->
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header>
+        <div class="header-logo-group">
+            <!-- School Logo Placeholder -->
+            <img src="https://placehold.co/50x50/2196F3/FFFFFF?text=Kids+Logo" alt="Starlight Primary Logo" class="school-logo">
+            <a href="#top">Starlight Primary</a>
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html">Home</a> <!-- Link to the top of this page, or could be external to index.html -->
+            <a href="academics.html">Academics</a>
+            <a href="news_updates.html" class="active">News and Updates</a>
+            <a href="parents.html">Parents' Corner</a>
+            <a href="about.html">About us</a>
+        </nav>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Emergency Alert Banner (Example - can be hidden/shown via JS) -->
+        <div class="emergency-alert" id="emergencyAlert" style="display: none;">
+            <i class="fas fa-exclamation-triangle mr-2"></i>
+            <strong>SCHOOL CLOSURE:</strong> Due to unforeseen circumstances, Starlight Primary will be closed tomorrow, [Date]. Please check your email for more details.
+        </div>
+
+        <!-- Hero Section for News & Events -->
+        <section id="news-events-hero" class="bg-white py-16">
+            <div class="content-section-wrapper">
+                <h1 class="section-title">News & Events at Starlight Primary</h1>
+                <p class="text-lg text-text-medium mb-8">Stay up-to-date with all the exciting happenings, important announcements, and wonderful achievements within our school community.</p>
+                <a href="#calendar-of-events" class="action-button">View Calendar</a>
+            </div>
+        </section>
+
+        <!-- Calendar of Events Section -->
+        <section id="calendar-of-events">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="calendar-grid">
+                <div class="calendar-card">
+                    <div class="date">Oct 25</div>
+                    <div class="event-title">Autumn Festival & Bake Sale</div>
+                    <div class="event-time-location"><i class="far fa-clock"></i> 3:00 PM - 5:00 PM | <i class="fas fa-map-marker-alt"></i> School Hall</div>
+                    <p class="event-description">Join us for a fun-filled afternoon with games, crafts, and delicious treats! All proceeds support new playground equipment.</p>
+                </div>
+                <div class="calendar-card">
+                    <div class="date">Nov 05</div>
+                    <div class="event-title">New Families Open Day</div>
+                    <div class="event-time-location"><i class="far fa-clock"></i> 10:00 AM - 12:00 PM | <i class="fas fa-map-marker-alt"></i> Main Entrance</div>
+                    <p class="event-description">Prospective families are invited to tour our school, meet teachers, and learn about our programs.</p>
+                </div>
+                <div class="calendar-card">
+                    <div class="date">Nov 15</div>
+                    <div class="event-title">Parent-Teacher Conference Day</div>
+                    <div class="event-time-location"><i class="far fa-clock"></i> All Day | <i class="fas fa-map-marker-alt"></i> Classrooms</div>
+                    <p class="event-description">Scheduled meetings to discuss your child's progress. Please sign up via the parent portal.</p>
+                </div>
+                <div class="calendar-card">
+                    <div class="date">Dec 10</div>
+                    <div class="event-title">Annual Winter Concert</div>
+                    <div class="event-time-location"><i class="far fa-clock"></i> 6:00 PM | <i class="fas fa-map-marker-alt"></i> School Auditorium</div>
+                    <p class="event-description">Our students will showcase their musical talents in a festive winter performance. All welcome!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent News Articles or Announcements Section -->
+        <section id="recent-news" class="bg-light-grey">
+            <h2 class="section-title">Recent News & Announcements</h2>
+            <div class="news-grid">
+                <div class="news-card"
+                     data-news-title="Year 2 Explores the Science Museum!"
+                     data-news-date="October 20, 2077"
+                     data-news-image="../media/Bubbly Tots Learning Center.jfif"
+                     data-full-story="Our Year 2 students had an incredible day at the City Science Museum, discovering interactive exhibits and conducting fun experiments. They learned about the principles of flight in the aviation zone, explored the wonders of the human body, and even built their own mini-robots. The highlight was definitely the interactive planetarium show, which sparked many questions about space and beyond! This trip was a fantastic way to bring their science lessons to life and encourage their natural curiosity."
+                >
+                    <img src="../media/Bubbly Tots Learning Center.jfif" alt="Year 2 Field Trip to Science Museum">
+                    <div class="news-date">October 20, 2077</div>
+                    <h3 class="news-title">Year 2 Explores the Science Museum!</h3>
+                    <p class="news-snippet">Our Year 2 students had an incredible day at the City Science Museum, discovering interactive exhibits and conducting fun experiments...</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="news-card"
+                     data-news-title="Exciting New Books in Our Library!"
+                     data-news-date="October 15, 2077"
+                     data-news-image="../media/Bubbly Tots Learning Center.jfif"
+                     data-full-story="We are thrilled to announce a fantastic new collection of books has arrived in the Starlight Primary library! From captivating adventure stories and magical tales to fascinating non-fiction books about animals, space, and history, there's something for every young reader. We encourage all students to visit the library during their free time or with their classes to explore these wonderful new additions and embark on new literary adventures. Happy reading, Starlight stars!"
+                >
+                    <img src="../media/Bubbly Tots Learning Center.jfif" alt="New Library Books">
+                    <div class="news-date">October 15, 2077</div>
+                    <h3 class="news-title">Exciting New Books in Our Library!</h3>
+                    <p class="news-snippet">We've added a fantastic collection of new storybooks and non-fiction titles to our library. Encourage your child to visit!...</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="news-card"
+                     data-news-title="Generous Harvest Festival Donations"
+                     data-news-date="October 10, 2077"
+                     data-news-image="../media/Bubbly Tots Learning Center.jfif"
+                     data-full-story="A huge thank you to all families for their incredibly generous contributions to our annual Harvest Festival. The abundance of food items, from fresh produce to canned goods, was truly heartwarming. Your kindness and community spirit will make a significant difference to local charities and food banks, helping those in need within our community. We are so proud of our Starlight Primary family for demonstrating such wonderful compassion and generosity."
+                >
+                    <img src="../media/Bubbly Tots Learning Center.jfif" alt="Harvest Festival Donations">
+                    <div class="news-date">October 10, 2077</div>
+                    <h3 class="news-title">Generous Harvest Festival Donations</h3>
+                    <p class="news-snippet">A huge thank you to all families for their generous contributions to our Harvest Festival. Your kindness supports local charities...</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Celebrations and Achievements Section -->
+        <section id="celebrations">
+            <h2 class="section-title">Celebrating Our Stars!</h2>
+            <div class="news-grid"> <!-- Reusing news-grid for layout consistency -->
+                <div class="news-card"
+                     data-news-title="Student of the Month: Leo M."
+                     data-news-date="October 28, 2077"
+                     data-news-image="../media/Bubbly Tots Learning Center.jfif"
+                     data-full-story="We are delighted to announce that Leo M. from Year 3 has been awarded 'Student of the Month' for October! Leo consistently demonstrates outstanding effort in Mathematics, always eager to tackle new challenges and help his classmates understand difficult concepts. His positive attitude and helpfulness make him a true role model in the classroom. Congratulations, Leo, keep up the fantastic work!"
+                >
+                    <img src="../media/Bubbly Tots Learning Center.jfif" alt="Student of the Month">
+                    <div class="news-date">October 28, 2077</div>
+                    <h3 class="news-title">Student of the Month: Leo M.</h3>
+                    <p class="news-snippet">Congratulations to Leo for his outstanding effort in Mathematics and his helpfulness towards classmates!</p>
+                    <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="news-card"
+                     data-news-title="Inter-School Sportsmanship Award!"
+                     data-news-date="October 22, 2077"
+                     data-news-image="../media/Bubbly Tots Learning Center.jfif"
+                     data-full-story="Our Year 4 football team showed incredible spirit and teamwork at the recent inter-school tournament, earning them the highly coveted Sportsmanship Award! While they played with determination, it was their respect for opponents, fair play, and positive encouragement that truly shone through. We are immensely proud of their conduct both on and off the field. Well done, Starlight Primary football stars!"
+                >
+                    <img src="../media/Bubbly Tots Learning Center.jfif" alt="Sports Team Award">
+                    <div class="news-date">October 22, 2077</div>
+                    <h3 class="news-title">Inter-School Sportsmanship Award!</h3>
+                    <p class="news-snippet">Our Year 4 football team received the Sportsmanship Award at the recent tournament. Well done, team!</p>
+                    <a href="#" class="read-more">See Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="news-card"
+                     data-news-title="Young Artist Competition Winner!"
+                     data-news-date="October 18, 2077"
+                     data-news-image="../media/Bubbly Tots Learning Center.jfif"
+                     data-full-story="A huge round of applause for Maya P. from Year 3, who has won first prize in the regional Young Artist Competition! Her vibrant landscape painting, 'Sunset over the Whispering Woods,' captivated the judges with its imaginative use of color and intricate details. Maya's talent and dedication to art are truly inspiring. We can't wait to see what she creates next!"
+                >
+                    <img src="../media/Bubbly Tots Learning Center.jfif" alt="Art Competition Winner">
+                    <div class="news-date">October 18, 2077</div>
+                    <h3 class="news-title">Young Artist Competition Winner!</h3>
+                    <p class="news-snippet">Maya P. from Year 3 won first prize in the regional Young Artist Competition for her vibrant landscape painting.</p>
+                    <a href="#" class="read-more">View Art <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (retained for consistency in standalone page) -->
+        <section id="contact">
+            <h2 class="section-title">Connect with Starlight Primary</h2>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required class="rounded-xl">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required class="rounded-xl">
+
+                <label for="subject">Subject</label>
+                <text type="text" id="subject" name="subject" placeholder="Inquiry Subject" required class="rounded-xl">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message here..." required class="rounded-xl"></textarea>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- The Modal Structure -->
+    <div id="storyModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close-button">&times;</span>
+            <img id="modalImage" class="modal-image" src="" alt="News Image">
+            <div id="modalDate" class="modal-date"></div>
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <p id="modalText" class="modal-text"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#top">Home</a> |
+            <a href="#calendar-of-events">Events</a> |
+            <a href="#recent-news">News</a> |
+            <a href="#celebrations">Celebrations</a> |
+            <a href="#contact-section">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2077 Starlight Primary. All rights reserved.</p>
+        <p class="credits">Developed by <span>Tris Tech Hub</span></p>
+    </footer>
+
+    <script src="../javascript/other.js"></script>
+</body>
+</html>

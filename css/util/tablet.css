@@ -1,0 +1,301 @@
+
+/* Tablet Optimizations for screens up to 768px wide */
+@media (max-width: 768px) {
+    /* General Layout */
+    .container {
+        padding: 0 1.5rem; /* Slightly more padding than mobile for tablets */
+    }
+
+    /* Header/Navigation */
+    .header {
+        padding: 1rem 1.5rem;
+        flex-direction: column; /* Stack logo and navigation items like phone */
+        align-items: center; /* Center items when stacked */
+    }
+
+    .logo img {
+        height: 45px; /* Slightly larger logo for tablets */
+    }
+
+    /* Adjusting the main navigation for tablets: */
+    .header {
+        padding: 0.8rem 1rem; /* Smaller padding for a compact header */
+        flex-direction: column; /* Stack logo and navigation items */
+        align-items: center; /* Center items when stacked */
+    }
+
+    .logo img {
+        height: 45px; /* Smaller logo for mobile */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        padding: 0;
+        margin-top: 0.5rem; /* Small margin above stacked nav items */
+    }
+
+    .navbar li {
+        margin: 0.3rem 0; /* Smaller vertical margin between nav items */
+    }
+
+    .navbar a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem; /* Slightly smaller font for nav links */
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 4rem 1.5rem;
+        min-height: 300px; /* Slightly larger hero height */
+    }
+
+    .hero-title {
+        font-size: 2.5rem; /* Larger font size for tablets */
+        margin-bottom: 0.8rem;
+    }
+
+    .school-motto {
+        font-size: 1.1rem; /* Larger font size */
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-button {
+        padding: 0.8rem 1.8rem; /* Larger button padding */
+        font-size: 1rem; /* Larger button font size */
+    }
+
+    /* General Section Titles and Content */
+    section {
+        padding: 3rem 1.5rem; /* Consistent section padding for tablets */
+    }
+
+    .section-title {
+        font-size: 1.8rem; /* Larger section titles */
+        margin-bottom: 1.5rem;
+    }
+
+    .content-section-wrapper h3 {
+        font-size: 1.6rem; /* Adjusted heading size */
+    }
+
+    .content-section-wrapper p,
+    .content-section-wrapper ul,
+    .content-section-wrapper li {
+        font-size: 1rem; /* Slightly larger body text */
+        line-height: 1.6;
+    }
+
+    /* Cards and Grids */
+    .card-grid,
+    .news-grid,
+    .calendar-grid,
+    .program-grid,
+    .staff-grid, /* Added for About page */
+    .achievements-grid, /* Added for About page */
+    .curriculum-grid, /* Added for Academics page */
+    .calendar-grid-academic, /* Added for Academics page */
+    .pta-updates-grid, /* Added for Parents page */
+    .policies-grid, /* Added for Parents page */
+    .faqs-grid, /* Added for Parents page */
+    .student-work-grid, /* Added for Parents page */
+    .student-achievements-grid /* Added for Parents page */
+    {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columns or more if space allows */
+        gap: 1.5rem; /* Slightly larger gap for tablets */
+    }
+
+    .card,
+    .highlight-item,
+    .news-card,
+    .calendar-card,
+    .program-card,
+    .staff-card,
+    .achievement-card,
+    .curriculum-card,
+    .pta-update-card,
+    .policy-card,
+    .faq-item,
+    .student-work-card,
+    .student-achievement-card {
+        padding: 1.2rem; /* Slightly larger padding for cards */
+        width: auto; /* Let grid handle width */
+    }
+
+    .news-card .news-title {
+        font-size: 1.3rem;
+    }
+
+    .calendar-card .date {
+        font-size: 1.8rem;
+    }
+
+    .calendar-card .event-title {
+        font-size: 1.2rem;
+    }
+
+    .program-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .program-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Image Sliders (Carousel) */
+    .mySlides img {
+        height: 300px; /* Larger height for carousel images */
+    }
+
+    .text {
+        font-size: 1rem; /* Slightly larger font for carousel text */
+    }
+
+    /* Forms */
+    .contact-form {
+        padding: 2rem; /* More padding for forms */
+    }
+
+    .contact-form label {
+        font-size: 1rem;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .contact-form button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Tables (Academics Schedule Table & Parents Corner Table) */
+    .responsive-table-container {
+        overflow-x: auto; /* Keep horizontal scrolling for very wide tables */
+    }
+
+    .schedule-table,
+    .parent-teacher-schedule-table { /* Apply to both general and specific schedule tables */
+        width: 100%;
+        min-width: 600px; /* Allow more space before scrolling on tablets */
+        font-size: 0.9rem; /* Slightly larger font for table text */
+    }
+
+    .schedule-table th, .schedule-table td,
+    .parent-teacher-schedule-table th, .parent-teacher-schedule-table td {
+        padding: 0.8rem; /* More padding for table cells */
+        font-size: 0.9rem; /* Slightly larger font */
+        min-width: 120px; /* Ensure columns have enough space */
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: row; /* Can go back to row layout for footer on tablets */
+        justify-content: space-around;
+        text-align: left;
+        gap: 1.5rem;
+    }
+
+    .footer-section {
+        margin-bottom: 0; /* Remove vertical margin if in row */
+    }
+
+    .footer-bottom {
+        flex-direction: row; /* Keep copyright and social links in a row */
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    /* --- Page Specific Styles for Tablet (max-width: 768px) --- */
+
+    /* HOME Page */
+    .welcome-section,
+    .highlights-section {
+        padding: 3rem 1.5rem;
+    }
+
+    /* ABOUT Page */
+    .about-content-wrapper {
+        flex-direction: row; /* Can go back to row layout for text and image */
+        align-items: flex-start; /* Align items to the top */
+        gap: 2rem;
+    }
+    .about-text-block {
+        flex: 1; /* Allow text block to grow */
+        padding: 0; /* Remove padding if container handles it */
+    }
+    .about-image {
+        flex: 0 0 300px; /* Fixed width for image container */
+        max-width: 40%; /* Or a percentage */
+    }
+    .about-image img {
+        width: 100%;
+        height: auto;
+    }
+    .staff-card img {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* ACADEMICS Page */
+    .curriculum-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Potentially 2 columns */
+        gap: 1.5rem;
+    }
+    .curriculum-card {
+        text-align: left; /* Ensure text alignment */
+    }
+    .calendar-grid-academic {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Potentially 2 columns */
+        gap: 1.5rem;
+    }
+
+    /* NEWS & UPDATES Page */
+    .news-list, .event-list, .policy-list {
+        flex-direction: row; /* Can go back to row layout if cards are smaller */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center items */
+        gap: 1.5rem;
+    }
+    .news-item, .event-item, .policy-item {
+        width: calc(50% - 0.75rem); /* Two columns layout */
+        max-width: 350px; /* Max width for individual items */
+    }
+    .news-item img, .event-item img {
+        height: 180px; /* Slightly larger image height */
+    }
+    .news-detail-content img, .event-detail-content img {
+        max-height: 350px; /* Larger max height for detail images */
+    }
+    .news-detail-content h1, .event-detail-content h1 {
+        font-size: 2rem;
+    }
+
+    /* PARENTS Page */
+    .pta-updates-grid, .policies-grid, .faqs-grid,
+    .student-work-grid, .student-achievements-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns */
+        gap: 1.5rem;
+    }
+    .pta-update-card, .policy-card, .faq-item,
+    .student-work-card, .student-achievement-card {
+        width: auto; /* Let grid handle width */
+    }
+    .student-work-card img {
+        height: 180px;
+    }
+
+    /* Contact Page */
+    .contact-info-section {
+        flex-direction: column; /* Changed to column for better stacking on tablets */
+        gap: 1.5rem;
+    }
+    .contact-details, .contact-map {
+        width: 100%; /* Full width for details and map */
+    }
+    .contact-map iframe {
+        height: 300px; /* Adjusted map height for tablets */
+    }
+}

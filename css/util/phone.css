@@ -1,0 +1,452 @@
+/* General Mobile Optimizations for screens up to 480px wide */
+@media (max-width: 480px) {
+    /* General Body and Container Adjustments */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .container {
+        padding: 0 1rem; /* Reduce horizontal padding to give content more space */
+        flex-direction: column; /* Stack content vertically for better readability */
+        gap: 1rem; /* Reduce gap between stacked items */
+    }
+
+    /* Header/Navigation */
+    .header {
+        padding: 0.8rem 1rem; /* Smaller padding for a compact header */
+        flex-direction: column; /* Stack logo and navigation items */
+        align-items: center; /* Center items when stacked */
+    }
+
+    .logo img {
+        height: 40px; /* Smaller logo for mobile */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        padding: 0;
+        margin-top: 0.5rem; /* Small margin above stacked nav items */
+    }
+
+    .navbar li {
+        margin: 0.3rem 0; /* Smaller vertical margin between nav items */
+    }
+
+    .navbar a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem; /* Slightly smaller font for nav links */
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 3rem 1rem; /* Reduced padding for a more compact hero */
+        min-height: 250px; /* Smaller hero section height */
+    }
+
+    .hero-title {
+        font-size: 2rem; /* Adjusted font size for readability */
+        margin-bottom: 0.5rem;
+    }
+
+    .school-motto {
+        font-size: 1rem; /* Adjusted font size */
+        margin-bottom: 1rem;
+    }
+
+    .hero-button {
+        padding: 0.6rem 1.5rem; /* Adjusted button padding */
+        font-size: 0.9rem; /* Adjusted button font size */
+    }
+
+    /* General Section Titles and Content */
+    .section-title {
+        font-size: 1.5rem; /* Consistent smaller section titles */
+        margin-bottom: 1rem;
+    }
+
+    .content-section-wrapper h3 {
+        font-size: 1.4rem; /* Adjusted heading size within content sections */
+        margin-bottom: 0.8rem;
+    }
+
+    .content-section-wrapper p,
+    .content-section-wrapper ul,
+    .content-section-wrapper li {
+        font-size: 0.9rem; /* Smaller body text for better fit */
+        line-height: 1.5; /* Good line height for readability */
+    }
+
+    /* Cards and Highlight Items (e.g., for News, Events, Programs) */
+    .card,
+    .highlight-item,
+    .news-card,
+    .calendar-card,
+    .program-card {
+        padding: 1rem; /* Consistent smaller padding for all cards */
+        margin-bottom: 1rem; /* Ensure spacing when cards stack vertically */
+        width: 100%; /* Make cards take full width */
+        box-sizing: border-box; /* Include padding in the width calculation */
+    }
+
+    .card-grid,
+    .news-grid,
+    .calendar-grid,
+    .program-grid {
+        grid-template-columns: 1fr; /* Force single column layout for all grids */
+        gap: 1rem; /* Reduced gap between grid items */
+    }
+
+    .news-card .news-title {
+        font-size: 1.2rem; /* Adjusted news title font size */
+    }
+
+    .calendar-card .date {
+        font-size: 1.5rem; /* Adjusted calendar date font size */
+    }
+
+    .calendar-card .event-title {
+        font-size: 1.1rem; /* Adjusted event title font size */
+    }
+
+    .program-card h4 {
+        font-size: 1.1rem; /* Adjusted program card heading size */
+    }
+
+    .program-card p {
+        font-size: 0.85rem; /* Adjusted program card paragraph font size */
+    }
+
+    /* Image Sliders (Carousel) */
+    .mySlides img {
+        height: 200px; /* Reduced height for carousel images */
+        object-fit: cover; /* Ensure images cover the area without distortion */
+    }
+
+    .prev, .next {
+        font-size: 14px; /* Smaller font size for carousel navigation buttons */
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .text {
+        font-size: 0.9rem; /* Smaller font size for carousel text overlay */
+        padding: 8px 12px; /* Smaller padding for text overlay */
+    }
+
+    /* Forms (Contact Form) */
+    .contact-form {
+        padding: 1.5rem; /* Consistent padding for forms */
+        width: 100%; /* Forms take full width */
+        box-sizing: border-box;
+    }
+
+    .contact-form label {
+        font-size: 0.9rem; /* Smaller label font size */
+        margin-bottom: 0.3rem;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        padding: 0.6rem; /* Smaller padding for form inputs */
+        font-size: 0.9rem; /* Smaller font size for input text */
+        margin-bottom: 0.8rem;
+    }
+
+    .contact-form button {
+        padding: 0.7rem 1.2rem; /* Adjusted button padding */
+        font-size: 0.9rem; /* Adjusted button font size */
+    }
+
+    /* Tables (General Responsive Table Pattern for Public Pages) */
+    .responsive-table-container {
+        overflow-x: hidden; /* Enable horizontal scrolling for tables that are too wide */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        width: 100%; /* Ensure container takes full width */
+    }
+
+    .schedule-table {
+        width: 100%; /* Table takes full available width */
+        max-width: 400px; /* Set a minimum width to prevent excessive squishing, enabling scroll */
+        border-collapse: collapse;
+    }
+
+    .schedule-table th, .schedule-table td {
+        padding: 0.5rem; /* Reduced padding for table cells */
+        font-size: 0.8rem; /* Smaller font for table text */
+        white-space: nowrap; /* Prevent text wrapping in cells, forcing scroll if needed */
+    }
+
+    /* Message Box (for alerts/confirms) */
+    #messageBox {
+        width: 90%; /* Wider message box for better readability */
+        padding: 1.5rem;
+    }
+
+    #messageBoxTitle {
+        font-size: 1.2rem;
+    }
+
+    #messageBoxContent {
+        font-size: 0.95rem;
+    }
+
+    #messageBoxConfirmBtn,
+    #messageBoxCancelBtn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column; /* Stack footer columns vertically */
+        text-align: center; /* Center align footer content */
+        gap: 1rem;
+    }
+
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column; /* Stack copyright and social links */
+        gap: 0.5rem;
+    }
+
+    /* --- Page Specific Styles for Mobile (max-width: 480px) --- */
+
+    /* HOME Page (already largely covered by general styles, but adding specific checks) */
+    .welcome-section,
+    .highlights-section {
+        padding: 2rem 1rem; /* Consistent section padding */
+    }
+    .highlight-item {
+        text-align: center; /* Center text in highlight items */
+    }
+    .highlight-item i {
+        font-size: 2.5rem; /* Adjust icon size */
+        margin-bottom: 0.5rem;
+    }
+    .highlight-item h4 {
+        font-size: 1rem;
+    }
+    .highlight-item p {
+        font-size: 0.85rem;
+    }
+
+    /* ABOUT Page */
+    .about-content-wrapper {
+        flex-direction: column; /* Stack content sections */
+        gap: 1.5rem;
+    }
+    .about-text-block {
+        padding: 1rem;
+    }
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--border-radius);
+    }
+    .staff-grid, .achievements-grid {
+        grid-template-columns: 1fr; /* Single column for staff and achievements */
+        gap: 1rem;
+    }
+    .staff-card, .achievement-card {
+        padding: 1rem;
+        text-align: center;
+    }
+    .staff-card img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0.5rem;
+    }
+    .staff-card h4 {
+        font-size: 1.1rem;
+    }
+    .staff-card p {
+        font-size: 0.85rem;
+    }
+    .achievement-card h4 {
+        font-size: 1.1rem;
+    }
+    .achievement-card p {
+        font-size: 0.85rem;
+    }
+
+    /* ACADEMICS Page */
+    /* Adjusting curriculum-grid for better alignment */
+    .curriculum-grid {
+        grid-template-columns: 1fr; /* Ensure single column */
+        gap: 1rem;
+        align-items: stretch; /* Ensure cards stretch to fill height if needed */
+    }
+    .curriculum-card {
+        padding: 1rem;
+        text-align: left; /* Ensure text aligns left within the card */
+    }
+    .curriculum-card h4 {
+        font-size: 1.1rem;
+    }
+    .curriculum-card p {
+        font-size: 0.85rem;
+    }
+    .calendar-grid-academic {
+        grid-template-columns: 1fr; /* Ensure single column for academic calendar */
+        gap: 1rem;
+    }
+    .schedule-table {
+        font-size: 0.8rem; /* Ensure table text is readable */
+        width: 100%; /* Ensure table takes full width of its container */
+        display: block; /* Allows overflow-x to work on the table itself if needed */
+        overflow-x: auto; /* Enable horizontal scrolling for this specific table */
+        white-space: nowrap; /* Prevent text wrapping in cells */
+    }
+    .schedule-table th, .schedule-table td {
+        padding: 0.4rem; /* Even tighter padding for schedule table */
+        min-width: 80px; /* Give a minimum width to columns to prevent squishing */
+        box-sizing: border-box;
+    }
+    .admissions-content {
+        padding: 1.5rem;
+    }
+    .admissions-content h3 {
+        font-size: 1.3rem;
+    }
+    .admissions-content p {
+        font-size: 0.9rem;
+    }
+    .admissions-content .button {
+        width: 100%; /* Full width button */
+        box-sizing: border-box;
+    }
+    .image-text-block{
+        
+        display: block;
+        flex-direction: row; /* Stack image and text vertically */
+        align-items: center; /* Center align items */
+        gap: 1rem;
+    }
+
+    /* NEWS & UPDATES Page */
+    .news-list, .event-list, .policy-list {
+        flex-direction: column; /* Stack news items, events, policies */
+        gap: 1rem;
+    }
+    .news-item, .event-item, .policy-item {
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .news-item img, .event-item img {
+        width: 100%;
+        height: 150px; /* Fixed height for images */
+        object-fit: cover;
+        margin-bottom: 0.8rem;
+        border-radius: var(--border-radius);
+    }
+    .news-item h3, .event-item h3, .policy-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    .news-item p, .event-item p, .policy-item p {
+        font-size: 0.9rem;
+    }
+    .news-detail-content img, .event-detail-content img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border-radius: var(--border-radius);
+    }
+    .news-detail-content h1, .event-detail-content h1 {
+        font-size: 1.8rem;
+    }
+    .news-detail-content p, .event-detail-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* PARENTS Page */
+    .pta-updates-grid, .policies-grid, .faqs-grid {
+        grid-template-columns: 1fr; /* Single column for PTA updates, policies, FAQs */
+        gap: 1rem;
+    }
+    .pta-update-card, .policy-card, .faq-item {
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .pta-update-card h4, .policy-card h4, .faq-item h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    .pta-update-card p, .policy-card p, .faq-item p {
+        font-size: 0.9rem;
+    }
+    .faq-item .answer {
+        font-size: 0.9rem;
+    }
+    .student-work-grid, .student-achievements-grid {
+        grid-template-columns: 1fr; /* Single column for student work/achievements */
+        gap: 1rem;
+    }
+    .student-work-card, .student-achievement-card {
+        padding: 1rem;
+        text-align: center;
+    }
+    .student-work-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 0.8rem;
+        border-radius: var(--border-radius);
+    }
+    .student-work-card h4, .student-achievement-card h4 {
+        font-size: 1.1rem;
+    }
+    .student-work-card p {
+        font-size: 0.85rem;
+    }
+
+    /* Contact Page (if separate) */
+    .contact-info-section {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .contact-details, .contact-map {
+        width: 100%;
+    }
+    .contact-map iframe {
+        width: 100%;
+        height: 250px; /* Adjust map height */
+    }
+
+    /* Specific table for Parent-Teacher Meeting Schedules (assuming it's named 'parent-teacher-schedule-table' or similar) */
+    /* If it uses .schedule-table, the general rule will apply. If not, add a specific one. */
+    /* Assuming the table in Image 2 is also using .schedule-table or a similar class */
+    .parent-teacher-schedule-table { /* Add this class to your HTML table if it's not .schedule-table */
+        width: 100%;
+        display: block; /* Allows overflow-x to work */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+
+    .parent-teacher-schedule-table th,
+    .parent-teacher-schedule-table td {
+        padding: 0.6rem; /* Slightly more padding for readability */
+        font-size: 0.85rem; /* Slightly larger font */
+        white-space: nowrap; /* Prevent text wrapping */
+        min-width: 100px; /* Ensure columns have enough space */
+        text-align: left; /* Align text to left */
+        border: 1px solid #ddd; /* Add borders for clarity */
+    }
+
+    .parent-teacher-schedule-table th {
+        background-color: var(--primary-blue); /* Consistent header background */
+        color: white;
+    }
+}
